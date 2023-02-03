@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="adminScreenVM" type="com.app.app.modules.adminscreen.data.viewmodel.AdminScreenVM"/>
+    </data>
+    <LinearLayout android:gravity="center_horizontal"
+        android:id="@+id/linearAdminscreen"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:orientation="vertical" style="@style/groupStylegray_50">
+        <ImageView android:gravity="start" android:id="@+id/imageVector"
+            android:layout_height="@dimen/_159pxv"
+            android:layout_width="match_parent"
+            android:scaleType="fitXY"
+            imageRes="@{@drawable/img_vector_teal_600}"
+            tools:ignore="ContentDescription" tools:src="@drawable/img_vector_teal_600"/>
+        <LinearLayout android:gravity="start"
+            android:id="@+id/linearColumncallBlindPersonOne"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_85pxv"
+            android:layout_marginEnd="@dimen/_28pxh"
+            android:layout_marginStart="@dimen/_28pxh"
+            android:layout_marginTop="@dimen/_15pxv"
+            android:layout_width="match_parent" android:orientation="vertical">
+            <androidx.appcompat.widget.AppCompatButton
+                android:ellipsize="end" android:gravity="center"
+                android:id="@+id/btnCallBlindPersonOne"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:paddingBottom="@dimen/_19pxv"
+                android:paddingEnd="@dimen/_30pxh"
+                android:paddingStart="@dimen/_30pxh"
+                android:paddingTop="@dimen/_19pxv"
+                android:singleLine="true"
+                android:text="@string/msg_call_blind_pers"
+                android:textAllCaps="false"
+                style="@style/btnSolidRounded_1" tools:text="@string/msg_call_blind_pers"/>
+            <androidx.appcompat.widget.AppCompatButton
+                android:ellipsize="end" android:gravity="center"
+                android:id="@+id/btnFindHimLocationOne"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_60pxv"
+                android:layout_width="match_parent"
+                android:paddingBottom="@dimen/_19pxv"
+                android:paddingEnd="@dimen/_30pxh"
+                android:paddingStart="@dimen/_30pxh"
+                android:paddingTop="@dimen/_19pxv"
+                android:singleLine="true"
+                android:text="@string/msg_find_him_locati"
+                android:textAllCaps="false"
+                style="@style/btnSolidRounded_1" tools:text="@string/msg_find_him_locati"/>
+            <androidx.appcompat.widget.AppCompatButton
+                android:ellipsize="end" android:gravity="center"
+                android:id="@+id/btnRecordMessage"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_60pxv"
+                android:layout_width="match_parent"
+                android:paddingBottom="@dimen/_19pxv"
+                android:paddingEnd="@dimen/_30pxh"
+                android:paddingStart="@dimen/_30pxh"
+                android:paddingTop="@dimen/_19pxv"
+                android:singleLine="true"
+                android:text="@string/lbl_record_message"
+                android:textAllCaps="false"
+                style="@style/btnSolidRounded_1" tools:text="@string/lbl_record_message"/>
+            <androidx.appcompat.widget.AppCompatButton
+                android:ellipsize="end" android:gravity="center"
+                android:id="@+id/btnWriteNotice"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_60pxv"
+                android:layout_width="match_parent"
+                android:paddingBottom="@dimen/_19pxv"
+                android:paddingEnd="@dimen/_30pxh"
+                android:paddingStart="@dimen/_30pxh"
+                android:paddingTop="@dimen/_19pxv"
+                android:singleLine="true"
+                android:text="@string/lbl_write_notice"
+                android:textAllCaps="false"
+                style="@style/btnSolidRounded_1" tools:text="@string/lbl_write_notice"/>
+            <LinearLayout android:gravity="center_vertical"
+                android:id="@+id/linearRowbtnback"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_52pxh"
+                android:layout_marginStart="@dimen/_57pxh"
+                android:layout_marginTop="@dimen/_60pxv"
+                android:layout_width="match_parent" android:orientation="horizontal">
+                <EditText
+                    android:background="@drawable/rectangle_bg_teal_600_radius_30"
+                    android:ellipsize="end"
+                    android:hint="@string/lbl_back"
+                    android:id="@+id/etBtnBack" android:inputType="text"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:layout_width="0dp"
+                    android:paddingBottom="@dimen/_15pxv"
+                    android:paddingEnd="@dimen/_11pxh"
+                    android:paddingStart="@dimen/_24pxh"
+                    android:paddingTop="@dimen/_14pxv"
+                    android:singleLine="true"
+                    android:text="@={adminScreenVM.adminScreenModel.etBtnBackValue}"
+                    android:textColorHint="@color/white_A700"
+                    style="@style/etSolidRounded" tools:ignore="Autofill"/>
+                <TextView android:ellipsize="end"
+                    android:id="@+id/txtBtnExit"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_31pxh"
+                    android:layout_weight="0.5"
+                    android:layout_width="0dp"
+                    android:paddingBottom="@dimen/_15pxv"
+                    android:paddingStart="@dimen/_30pxh"
+                    android:paddingTop="@dimen/_14pxv"
+                    android:singleLine="true"
+                    android:text="@{adminScreenVM.adminScreenModel.txtBtnExit}"
+                    style="@style/txtSolidRounded" tools:text="@string/lbl_exit"/>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</layout>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="locationScreenVM" type="com.app.app.modules.locationscreen.data.viewmodel.LocationScreenVM"/>
+    </data>
+    <LinearLayout android:gravity="center_horizontal"
+        android:id="@+id/linearLocationScreen"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:orientation="vertical" style="@style/groupStylewhite_A700">
+        <TextView android:ellipsize="end"
+            android:gravity="center_horizontal"
+            android:id="@+id/txtBlindPersonLo"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_16pxh"
+            android:layout_marginStart="@dimen/_16pxh"
+            android:layout_marginTop="@dimen/_22pxv"
+            android:layout_width="match_parent"
+            android:singleLine="true"
+            android:text="@{locationScreenVM.locationScreenModel.txtBlindPersonLo}"
+            style="@style/txt_1" tools:text="@string/msg_blind_person_lo"/>
+        <ImageView android:id="@+id/imageRectangleFour"
+            android:layout_gravity="center_horizontal"
+            android:layout_height="@dimen/_721pxh"
+            android:layout_marginBottom="@dimen/_20pxv"
+            android:layout_marginEnd="@dimen/_16pxh"
+            android:layout_marginStart="@dimen/_16pxh"
+            android:layout_marginTop="@dimen/_12pxv"
+            android:layout_width="@dimen/_361pxh"
+            android:scaleType="fitXY"
+            imageRes="@{@drawable/img_rectangle4}"
+            tools:ignore="ContentDescription" tools:src="@drawable/img_rectangle4"/>
+    </LinearLayout>
+</layout>

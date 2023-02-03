@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="userScreenVM" type="com.app.app.modules.userscreen.data.viewmodel.UserScreenVM"/>
+    </data>
+    <LinearLayout android:gravity="center_horizontal"
+        android:id="@+id/linearUserscreen"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:orientation="vertical" style="@style/groupStylewhite_A700">
+        <ImageView android:id="@+id/imageScreenshot2023"
+            android:layout_gravity="center_horizontal"
+            android:layout_height="@dimen/_347pxh"
+            android:layout_marginEnd="@dimen/_26pxh"
+            android:layout_marginStart="@dimen/_26pxh"
+            android:layout_marginTop="@dimen/_138pxv"
+            android:layout_width="@dimen/_324pxh"
+            android:scaleType="fitXY" cornerRadius="@{@dimen/_40pxh}"
+            imageRes="@{@drawable/img_screenshot2023}"
+            tools:ignore="ContentDescription" tools:src="@drawable/img_screenshot2023"/>
+        <androidx.appcompat.widget.AppCompatButton
+            android:ellipsize="end" android:gravity="center"
+            android:id="@+id/btnSayUserNameToStart"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_20pxv"
+            android:layout_marginEnd="@dimen/_26pxh"
+            android:layout_marginStart="@dimen/_26pxh"
+            android:layout_marginTop="@dimen/_140pxv"
+            android:layout_width="match_parent"
+            android:paddingBottom="@dimen/_20pxv"
+            android:paddingEnd="@dimen/_30pxh"
+            android:paddingStart="@dimen/_30pxh"
+            android:paddingTop="@dimen/_20pxv" android:singleLine="true"
+            android:text="@string/msg_say_user_name_t"
+            android:textAllCaps="false" style="@style/btnSolidRounded" tools:text="@string/msg_say_user_name_t"/>
+    </LinearLayout>
+</layout>
