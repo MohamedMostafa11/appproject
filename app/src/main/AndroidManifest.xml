@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest package="com.app.app" xmlns:android="http://schemas.android.com/apk/res/android">
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <application android:allowBackup="false"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name" android:largeHeap="true"
+        android:name="com.app.app.appcomponents.di.MyApp"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true" android:theme="@style/Theme.MyApp" android:usesCleartextTraffic="true">
+        <activity android:exported="true"
+            android:name="com.app.app.modules.screengo.ui.ScreenGoActivity" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.app.app.modules.loginpage.ui.LoginPageActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.app.app.modules.callingscreen.ui.CallingScreenActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.app.app.modules.adminscreen.ui.AdminScreenActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.app.app.modules.registerpage.ui.RegisterPageActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.app.app.modules.screen.ui.ScreenActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.app.app.modules.callingsomeonescreen.ui.CallingsomeoneScreenActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.app.app.modules.locationscreen.ui.LocationScreenActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.app.app.modules.user2screen.ui.User2ScreenActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.app.app.modules.userscreen.ui.UserScreenActivity" android:screenOrientation="portrait"/>
+    </application>
+</manifest>

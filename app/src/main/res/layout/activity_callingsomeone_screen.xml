@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="callingsomeoneScreenVM" type="com.app.app.modules.callingsomeonescreen.data.viewmodel.CallingsomeoneScreenVM"/>
+    </data>
+    <LinearLayout android:id="@+id/linearCallingSomeone"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:orientation="vertical" style="@style/groupStylewhite_A700">
+        <ImageView android:id="@+id/imageScreenshot2023"
+            android:layout_gravity="center_horizontal"
+            android:layout_height="@dimen/_264pxh"
+            android:layout_marginEnd="@dimen/_69pxh"
+            android:layout_marginStart="@dimen/_69pxh"
+            android:layout_marginTop="@dimen/_70pxv"
+            android:layout_width="@dimen/_254pxh"
+            android:scaleType="fitXY" cornerRadius="@{@dimen/_40pxh}"
+            imageRes="@{@drawable/img_screenshot2023}"
+            tools:ignore="ContentDescription" tools:src="@drawable/img_screenshot2023"/>
+        <TextView android:ellipsize="end" android:gravity="end"
+            android:id="@+id/txtPersonPhoneNu"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_22pxh"
+            android:layout_marginStart="@dimen/_22pxh"
+            android:layout_marginTop="@dimen/_61pxv"
+            android:layout_width="match_parent"
+            android:singleLine="true"
+            android:text="@{callingsomeoneScreenVM.callingsomeoneScreenModel.txtPersonPhoneNu}"
+            style="@style/txt_1" tools:text="@string/msg_person_phone_nu"/>
+        <TextView android:ellipsize="end" android:id="@+id/txtCalling"
+            android:layout_gravity="center_horizontal"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_22pxh"
+            android:layout_marginStart="@dimen/_22pxh"
+            android:layout_marginTop="@dimen/_86pxv"
+            android:layout_width="wrap_content"
+            android:singleLine="true"
+            android:text="@{callingsomeoneScreenVM.callingsomeoneScreenModel.txtCalling}"
+            style="@style/txt_2" tools:text="@string/lbl_calling"/>
+        <EditText
+            android:background="@drawable/rectangle_bg_teal_600_radius_30"
+            android:ellipsize="end" android:hint="@string/lbl_back"
+            android:id="@+id/etBtnBack" android:inputType="text"
+            android:layout_gravity="start"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_20pxv"
+            android:layout_marginEnd="@dimen/_137pxh"
+            android:layout_marginStart="@dimen/_137pxh"
+            android:layout_marginTop="@dimen/_136pxv"
+            android:layout_width="wrap_content"
+            android:paddingBottom="@dimen/_15pxv"
+            android:paddingEnd="@dimen/_11pxh"
+            android:paddingStart="@dimen/_24pxh"
+            android:paddingTop="@dimen/_14pxv" android:singleLine="true"
+            android:text="@={callingsomeoneScreenVM.callingsomeoneScreenModel.etBtnBackValue}"
+            android:textColorHint="@color/white_A700"
+            style="@style/etSolidRounded" tools:ignore="Autofill"/>
+    </LinearLayout>
+</layout>

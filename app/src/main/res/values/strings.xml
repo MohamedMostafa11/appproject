@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<resources>
+    <string name="app_name">mohamed_s_application3</string>
+    <string name="loading">Loading…</string>
+    <string name="no_internet_connection">No internet connection!</string>
+<string name="lbl_request_time">Request Time</string>
+<string name="lbl_calling">Calling.....</string>
+<string name="msg_call_blind_pers">Call Blind Person</string>
+<string name="lbl_back">Back</string>
+<string name="lbl_shared_go">Shared Go</string>
+<string name="lbl_record_message">Record Message</string>
+<string name="msg_don_t_have_an_a">Don\u2019t have an account yet?</string>
+<string name="msg_confirm_passwot">Confirm Passwotd</string>
+<string name="msg_already_hane_an">Already hane an account?</string>
+<string name="lbl_exit">Exit</string>
+<string name="lbl_reading_things">Reading Things</string>
+<string name="lbl_admin">Admin</string>
+<string name="lbl_login">Login</string>
+<string name="msg_say_user_name_t">Say User Name To Start</string>
+<string name="lbl_phone_number">Phone Number</string>
+<string name="msg_blind_person_ph">Blind Person Phone Number</string>
+<string name="lbl_sign_in">Sign in</string>
+<string name="msg_blind_person_lo">Blind Person Location</string>
+<string name="lbl_notice">Notice</string>
+<string name="msg_please_fill_the">Please Fill the credentials</string>
+<string name="msg_person_phone_nu">Person Phone Number</string>
+<string name="lbl_user">User</string>
+<string name="lbl_passwotd">Passwotd</string>
+<string name="lbl_sign_up">Sign up</string>
+<string name="msg_user_phone_numb">User phone Number</string>
+<string name="lbl_write_notice">Write Notice</string>
+<string name="lbl_username">Username</string>
+<string name="lbl_register">Register</string>
+<string name="lbl_call_someone">Call Someone</string>
+<string name="msg_find_him_locati">Find Him Location</string>
+<string name="msg_please_enter_valid_phone_nu">Please enter valid phone number</string>
+<string name="msg_please_enter_valid_text">Please enter valid text</string>
+</resources>
